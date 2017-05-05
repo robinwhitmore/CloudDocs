@@ -3,9 +3,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+<meta name="description" content="Use tags to find topics based on subject matter.">
 <meta name="keywords" content=" ">
-<title>Configuration Topics | Weebly Cloud Developer Documentation</title>
+<title>What are Tag Pages? | Weebly Cloud Developer Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -135,7 +135,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud Developer Docs feedback&body=I have some feedback about the Configuration Topics page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud Developer Docs feedback&body=I have some feedback about the What are Tag Pages? page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -153,7 +153,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Configuration Topics">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="What are Tag Pages?">{title}</a></li>',
                     noResultsText: 'No results',
                             limit: 10,
                             fuzzy: true,
@@ -189,7 +189,7 @@
             
             
             
-            <li><a href="cl_tags_about.html">What are tag pages?</a></li>
+            <li class="active"><a href="cl_tags_about.html">What are tag pages?</a></li>
             
             
             
@@ -210,7 +210,7 @@
             
             
             
-            <li class="active"><a href="tag_configuration.html">Configuration</a></li>
+            <li><a href="tag_configuration.html">Configuration</a></li>
             
             
             
@@ -278,7 +278,7 @@
         <div>
     <div class="pageType"> </div>
     <div class="post-header">
-        <h1 class="post-title-main">Configuration Topics</h1>
+        <h1 class="post-title-main">What are Tag Pages?</h1>
     </div>
 </div>
 
@@ -288,176 +288,171 @@
 <div class="post-content">
 
    
+    <div class="summary">Use tags to find topics based on subject matter.</div>
+   
 
 
-
-    
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
-
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-  
-});
-</script>
-
-<div id="toc"></div>
 
     
 
 
     
 
-  <p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn">configuration</button></p>
-<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
-    <tbody>
+  <div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">Topics Sorted by Tags</h2>
+    </div>
 
+<!--    
+        allowed-tagsgetting_startedtroubleshootingconfigurationcustom_appsusersplanssitesapisplugins
+    -->
     
     
-    
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
 
-        <tr><td><a href="cl_gs_configure.html">Configure Weebly Cloud</a></td>
-            <td>  <span class="label label-default">task </span></td>
-          <td> You use the Settings tab of the Weebly Cloud Admin portal to configure your cloud account. You can add your logo and other company links and contact info, co... </td>
-        </tr>
-        
-     
-   
-    
-   
-    
-        
-     
-        
-     
-        
+    <div class="col-md-3 col-sm-6">
 
-        <tr><td><a href="cl_testGit.html">Test Git</a></td>
-            <td></td>
-          <td> Testing Git EIGHT
- </td>
-        </tr>
-        
-     
-        
-     
-        
-     
-        
-     
-        
-     
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
+            <div class="panel-body text-center">
+                <div class="panel-heading">
+                    <h5>getting_started</h5>
+                </div>
 
+                
+                    
+                   <p>Learn all about how to set up and configure Weebly Cloud</p>
+                    
+                
+                <a href="tag_getting_started.html" class="btn btn-primary">View Topics</a>
+            </div>
 
+        </div>
         
+    
+
+    <div class="col-md-3 col-sm-6">
+
+            <div class="panel-body text-center">
+                <div class="panel-heading">
+                    <h5>troubleshooting</h5>
+                </div>
+
+                
+                <a href="tag_troubleshooting.html" class="btn btn-primary">View Topics</a>
+            </div>
+
+        </div>
         
+    
 
-   </tbody>
-</table>
+    <div class="col-md-3 col-sm-6">
 
+            <div class="panel-body text-center">
+                <div class="panel-heading">
+                    <h5>configuration</h5>
+                </div>
+
+                
+                <a href="tag_configuration.html" class="btn btn-primary">View Topics</a>
+            </div>
+
+        </div>
+        
+    
+
+    <div class="col-md-3 col-sm-6">
+
+            <div class="panel-body text-center">
+                <div class="panel-heading">
+                    <h5>custom_apps</h5>
+                </div>
+
+                
+                <p>Create apps that you can install directly to your customer's sites.</p>
+                
+                <a href="tag_custom_apps.html" class="btn btn-primary">View Topics</a>
+            </div>
+
+        </div>
+        
+    
+
+    <div class="col-md-3 col-sm-6">
+
+            <div class="panel-body text-center">
+                <div class="panel-heading">
+                    <h5>users</h5>
+                </div>
+
+                
+                <a href="tag_users.html" class="btn btn-primary">View Topics</a>
+            </div>
+
+        </div>
+        
+    
+
+    <div class="col-md-3 col-sm-6">
+
+            <div class="panel-body text-center">
+                <div class="panel-heading">
+                    <h5>plans</h5>
+                </div>
+
+                
+                <a href="tag_plans.html" class="btn btn-primary">View Topics</a>
+            </div>
+
+        </div>
+        
+    
+
+    <div class="col-md-3 col-sm-6">
+
+            <div class="panel-body text-center">
+                <div class="panel-heading">
+                    <h5>sites</h5>
+                </div>
+
+                
+                <p>Create and manage your customer's sites.</p>
+                
+                <a href="tag_sites.html" class="btn btn-primary">View Topics</a>
+            </div>
+
+        </div>
+        
+    
+
+    <div class="col-md-3 col-sm-6">
+
+            <div class="panel-body text-center">
+                <div class="panel-heading">
+                    <h5>apis</h5>
+                </div>
+
+                
+                <p>Work with the Weebly API.</p>
+                
+                <a href="tag_apis.html" class="btn btn-primary">View Topics</a>
+            </div>
+
+        </div>
+        
+    
+
+    <div class="col-md-3 col-sm-6">
+
+            <div class="panel-body text-center">
+                <div class="panel-heading">
+                    <h5>plugins</h5>
+                </div>
+
+                
+                <a href="tag_plugins.html" class="btn btn-primary">View Topics</a>
+            </div>
+
+        </div>
+        
+</div>
 
 
     <div class="tags">

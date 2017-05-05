@@ -60,7 +60,7 @@
 
 {
 "title": "1. Design the Element",
-"tags": "getting_started",
+"tags": "getting_startedcustom_apps",
 "keywords": "",
 "url": "cl_element_1.html",
 "summary": ""
@@ -71,7 +71,7 @@
 
 {
 "title": "2. Register the App",
-"tags": "",
+"tags": "getting_startedcustom_apps",
 "keywords": "",
 "url": "cl_element_2.html",
 "summary": ""
@@ -97,6 +97,17 @@
 "keywords": "",
 "url": "cl_gs_configure.html",
 "summary": "You use the Settings tab of the Weebly Cloud Admin portal to configure your cloud account. You can add your logo and other company links and contact info, configure locale settings like time and date, set up messages for our support team, set up your domain and URLs, contacts, and access your API keys."
+}
+,
+
+
+
+{
+"title": "What are Tag Pages?",
+"tags": "",
+"keywords": "",
+"url": "cl_tags_about.html",
+"summary": "Use tags to find topics based on subject matter."
 }
 ,
 
