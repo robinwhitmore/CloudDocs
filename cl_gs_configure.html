@@ -179,10 +179,20 @@
           
 
 
+
+
+
+
+
+
+
+
 <ul id="mysidebar" class="nav">
     <li class="sidebarTitle">Weebly Cloud </li>
     
     
+    
+        
     
     <li>
         <a href="#">Get Started</a>
@@ -331,14 +341,14 @@
 $( document ).ready(function() {
   // Handler for .ready() called.
 
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2' });
 
 /* this offset helps account for the space taken up by the floating toolbar. */
 $('#toc').on('click', 'a', function() {
   var target = $(this.getAttribute('href'))
     , scroll_target = target.offset().top
 
-  $(window).scrollTop(scroll_target - 10);
+  $(window).scrollTop(scroll_target - 50);
   return false
 })
   
@@ -353,20 +363,18 @@ $('#toc').on('click', 'a', function() {
     
 
   <h2 id="brand-your-sites-and-the-cloud-admin">Brand Your Sites and the Cloud Admin</h2>
-<p>You can brand Weebly Cloud by adding your company’s name and uploading your company’s logo and a fav icon. Once configured, your company’s name displays in a number of places, such as the footer of published sites, in the Site Editor, and in invitaiton emails.</p>
+<p>You can brand Weebly Cloud by adding your company’s name and uploading your company’s logo and a fav icon. Once configured, your company’s name displays in a number of places, such as  in the Site Editor and in invitation emails.</p>
 
-<p>For example, here’s the footer of a published site showing the company name Nash Hosting.</p>
-<figure><img class="docimage" src="images/cl_settings_footerName.png" alt="" /><figcaption>Footer of a published site on Nash Hosting</figcaption></figure>
-
-<p>And here’s an email sent inviting a new user.</p>
+<p>For example, here’s an email sent inviting a new user.</p>
 <figure><img class="docimage" src="images/cl_settings_mail.png" alt="" /><figcaption>Footer of a published site on Nash Hosting</figcaption></figure>
 
 <h2 id="set-your-domain">Set Your Domain</h2>
 
-<p>You can set a domain that is used to access both the Cloud Admin (<code class="highlighter-rouge">&lt;your_domain&gt;/admin</code>) and the User portal (<code class="highlighter-rouge">&lt;your_domain&gt;/portal</code>), and that displays in the user’s address bar when using the Site Editor. You can choose to use a subdomain of <code class="highlighter-rouge">weeblycloud.com</code> or you can use a custom domain.</p>
+<p>You can set a domain that is used to access both the Cloud Admin (<code class="highlighter-rouge">your_domain/admin</code>) and the User portal (<code class="highlighter-rouge">your_domain/portal</code>), and that displays in the user’s address bar when using the Site Editor. You can choose to use a subdomain of <code class="highlighter-rouge">weeblycloud.com</code> or you can use a custom domain.</p>
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you don’t configure a domain, you will not be able to generate and send emails from the Cloud Admin and you will not have access to the User portal.</div>
 
-<p>​To set a subdomain, in the Domain area, click the <strong>Edit</strong> icon, click <strong>Subdomain</strong>, enter the subdomain to be used, and click <strong>Save</strong>. If the subdomain is available, a green checkmark displays. The subdomain will be applied to both the Cloud Admin and the User Login portals.</p>
+<p>To set a subdomain, in the Domain area, click the <strong>Edit</strong> icon, click <strong>Subdomain</strong>, enter the subdomain to be used, and click <strong>Save</strong>. If the subdomain is available, a green checkmark displays. The subdomain will be applied to both the Cloud Admin and the User Login portals.</p>
 
 
 
@@ -396,7 +404,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Weebly. All rights reserved. <br />
- Site last generated: May 5, 2017 <br />
+ Site last generated: May 24, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
