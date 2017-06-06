@@ -3,9 +3,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content=" ">
-<title>Configuration Topics | Weebly Cloud for Designers Documentation</title>
+<meta name="description" content="You use Cloud Admin to create team members, which are the users internal to your company that can use Cloud Admin. Team members are assigned roles that deter...">
+<meta name="keywords" content="getting_startedusers,  Cloud Admin, users, team members, roles">
+<title>Create Cloud Admin Users | Weebly Cloud Developer Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -108,7 +108,7 @@
             </button>
 
             <a class="fa fa-home fa-lg navbar-brand" href="home.html">&nbsp;<span class="projectTitle">
-                Weebly Cloud for Designers Documentation</span></a>
+                Weebly Cloud Developer Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -120,7 +120,11 @@
                 
                 
                 
-                <li><a href="ds_tags_about.html">Tags</a></li>
+                <li><a href="cl_apis_about.html">Cloud API</a></li>
+                
+                
+                
+                <li><a href="cl_apps_gs.html">Custom Apps</a></li>
                 
                 
                 
@@ -132,7 +136,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Configuration Topics page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud Developer Docs feedback&body=I have some feedback about the Create Cloud Admin Users page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -150,7 +154,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Configuration Topics">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Create Cloud Admin Users">{title}</a></li>',
                     noResultsText: 'No results',
                             limit: 10,
                             fuzzy: true,
@@ -184,8 +188,120 @@
 
 
 <ul id="mysidebar" class="nav">
-    <li class="sidebarTitle"> </li>
+    <li class="sidebarTitle">Weebly Cloud </li>
     
+    
+    
+        
+    
+    <li>
+        <a href="#">Get Started</a>
+        <ul>
+            
+            
+            
+            <li><a href="home.html">Get Started with Weebly Cloud</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_integration.html">Integration Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_custom.html">Creating Custom Apps</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_hosting.html">Understanding Hosting Options</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_configure.html">Configure Weebly Cloud</a></li>
+            
+            
+            
+            
+            
+            
+            <li class="active"><a href="cl_gs_admin_users.html">Create Cloud Admin Users</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Integrate Weebly</a>
+        <ul>
+            
+            
+            
+            <li><a href="cl_gs_plans.html">Create Plans</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_users.html">Create and Manage Users</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_sites.html">Create Sites</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Manage Weebly</a>
+        <ul>
+            
+            
+            
+            <li><a href="cl_gs_upgrades.html">Handle Upgrades</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_loginlink.html">Provide SSO Access with a loginLink</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_suspend.html">Suspend and Remove Sites</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
         <!-- if you aren't using the accordion, uncomment this block:
            <p class="external">
                <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
@@ -203,7 +319,7 @@
         <div>
     <div class="pageType"> </div>
     <div class="post-header">
-        <h1 class="post-title-main">Configuration Topics</h1>
+        <h1 class="post-title-main">Create Cloud Admin Users</h1>
     </div>
 </div>
 
@@ -212,6 +328,8 @@
 
 <div class="post-content">
 
+   
+    <div class="summary">You use Cloud Admin to create team members, which are the users internal to your company that can use Cloud Admin. Team members are assigned roles that determine what they can and cannot do in Cloud Admin.</div>
    
 
 
@@ -244,129 +362,64 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn">configuration</button></p>
-<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
-    <tbody>
+  <h2 id="about-team-members">About Team Members</h2>
 
-    
-    
-    
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
+<p>​Team members are internal users that can use Cloud Admin. You create and manage team members from the Team tab of Cloud Admin.</p>
 
-        <tr><td><a href="ds_gs_configure.html">Configure Weebly Cloud</a></td>
-            <td>  <span class="label label-default">task </span></td>
-          <td> You use the Settings tab of the Weebly Cloud Admin portal to configure your cloud account. You can add your logo and other company links and contact info, co... </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
+<figure><img class="docimage" src="images/cl_members.png" alt="" /></figure>
+<p><br /></p>
 
+<p>Team members must have a unique email as an identifier (and is the username for logging into the Cloud Admin), and are assigned a role that determines what they can access in the portal.</p>
+<figure><img class="docimage" src="images/cl_memberCreate.png" alt="" /></figure>
+<p><br /></p>
 
-        
-        
+<hr />
 
-   </tbody>
-</table>
+<h2 id="team-member-roles">Team Member Roles</h2>
+<p>When you create a team member, you must associate them with a role. Roles determine what they can and cannot do in Cloud Admin.</p>
 
+<p>Here are the roles and their permissions:</p>
+<ul>
+  <li><strong>Admin</strong>: Can access all portal functionality. Can view, create, edit, and delete customer and team members. Can view, create, edit, log into, and publish all websites. Can access account settings and billing information.</li>
+</ul>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> If you want a team member to have access to a specific site, then you must also create them as a <a data-container="body" data-toggle="popover" data-content="Users that are not the owners of the site, but have varying access to edit that site and some of the site's settings.">contributor</a> for that site.</div>
+<!--TODO: add link-->
+<ul>
+  <li><strong>Technical</strong>: Can access all customer and site functionality, as well as account settings. Does not have access to team member or billing functionality.</li>
+  <li><strong>Support</strong>: Can view and edit customers. Has full access to site functionality. Cannot access team member, account settings or billing functionality.</li>
+  <li><strong>Editor</strong>: Can only view customers and view and edit sites. Cannot access anything else.</li>
+  <li><strong>Finance</strong>: Can only access billing functionality. Cannot access anything else.</li>
+</ul>
+<hr />
+
+<h2 id="create-a-team-member">Create a Team Member</h2>
+
+<ol>
+  <li>In Cloud Admin, click the <strong>TEAM</strong> tab.</li>
+  <li>Click <strong>Add Member</strong>.</li>
+  <li>Enter a name and an email address. The address is used to log into the Cloud Admin.</li>
+  <li>Select a role.</li>
+  <li>Click <strong>Save</strong>.</li>
+</ol>
+
+<p>When a team member is created, an email is sent with a link that allows them to create a password and log into the Cloud Admin (the email is the username). You can also create this login link using the <span style="color: red">Team Member API</span>.
+<!--TODO: add link--></p>
 
 
     <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_getting_started.html" class="btn btn-default navbar-btn cursorNorm" role="button">getting_started</a>
+        
+        
+        
+        <a href="tag_users.html" class="btn btn-default navbar-btn cursorNorm" role="button">users</a>
+        
+        
         
     </div>
 

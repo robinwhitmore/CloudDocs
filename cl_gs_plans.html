@@ -3,9 +3,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content=" ">
-<title>Configuration Topics | Weebly Cloud for Designers Documentation</title>
+<meta name="description" content="Weebly offers plans that determine the functionality available to a site. You create your own plans and plan pricing and then associate them with Weebly plan...">
+<meta name="keywords" content="getting startedplans,  plans, packages, pages, App Center, access">
+<title>Create Plans | Weebly Cloud Developer Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -108,7 +108,7 @@
             </button>
 
             <a class="fa fa-home fa-lg navbar-brand" href="home.html">&nbsp;<span class="projectTitle">
-                Weebly Cloud for Designers Documentation</span></a>
+                Weebly Cloud Developer Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -120,7 +120,11 @@
                 
                 
                 
-                <li><a href="ds_tags_about.html">Tags</a></li>
+                <li><a href="cl_apis_about.html">Cloud API</a></li>
+                
+                
+                
+                <li><a href="cl_apps_gs.html">Custom Apps</a></li>
                 
                 
                 
@@ -132,7 +136,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Configuration Topics page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud Developer Docs feedback&body=I have some feedback about the Create Plans page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -150,7 +154,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Configuration Topics">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Create Plans">{title}</a></li>',
                     noResultsText: 'No results',
                             limit: 10,
                             fuzzy: true,
@@ -184,8 +188,120 @@
 
 
 <ul id="mysidebar" class="nav">
-    <li class="sidebarTitle"> </li>
+    <li class="sidebarTitle">Weebly Cloud </li>
     
+    
+    
+        
+    
+    <li>
+        <a href="#">Get Started</a>
+        <ul>
+            
+            
+            
+            <li><a href="home.html">Get Started with Weebly Cloud</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_integration.html">Integration Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_custom.html">Creating Custom Apps</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_hosting.html">Understanding Hosting Options</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_configure.html">Configure Weebly Cloud</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_admin_users.html">Create Cloud Admin Users</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Integrate Weebly</a>
+        <ul>
+            
+            
+            
+            <li class="active"><a href="cl_gs_plans.html">Create Plans</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_users.html">Create and Manage Users</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_sites.html">Create Sites</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Manage Weebly</a>
+        <ul>
+            
+            
+            
+            <li><a href="cl_gs_upgrades.html">Handle Upgrades</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_loginlink.html">Provide SSO Access with a loginLink</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="cl_gs_suspend.html">Suspend and Remove Sites</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
         <!-- if you aren't using the accordion, uncomment this block:
            <p class="external">
                <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
@@ -203,7 +319,7 @@
         <div>
     <div class="pageType"> </div>
     <div class="post-header">
-        <h1 class="post-title-main">Configuration Topics</h1>
+        <h1 class="post-title-main">Create Plans</h1>
     </div>
 </div>
 
@@ -212,6 +328,8 @@
 
 <div class="post-content">
 
+   
+    <div class="summary">Weebly offers plans that determine the functionality available to a site. You create your own plans and plan pricing and then associate them with Weebly plans. Customers see only your plans.</div>
    
 
 
@@ -244,129 +362,59 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn">configuration</button></p>
-<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
-    <tbody>
+  <h2 id="about-plans">About Plans</h2>
 
-    
-    
-    
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
+<p>The Weebly Cloud platform uses plans to determine what a site does and does not have access to. For example, the Weebly Starter Plan doesn’t allow site search, while the other plans do. Video and audio players are only available on the Pro plan and above. You create your own plans, including pricing, page limits, and whether or not the plan allows access to the <a href="cl_gs_apps.html">Weebly App Center</a> (if this is activated for your account), and then associate each of your plans with a Weebly plan. You must create at least one plan, and you must designate one plan as the default that is automatically assigned to a site if a user does not pick one.</p>
 
-        <tr><td><a href="ds_gs_configure.html">Configure Weebly Cloud</a></td>
-            <td>  <span class="label label-default">task </span></td>
-          <td> You use the Settings tab of the Weebly Cloud Admin portal to configure your cloud account. You can add your logo and other company links and contact info, co... </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The App Center is not white-labeled. That is, the Weebly brand appears throughout the center.</div>
 
+<p>Every site must be associated with one, and only one plan. Sites are associated with a plan when the <a href="cl_gs_sites.html">site is created</a>, either by the user, or by you in the Cloud Admin, or programmatically. Your account representative will setup a default set of plans for you to get started.</p>
 
-        
-        
+<p>You use Cloud Admin to create your plans and if using ﻿plug-ins, import them using the plug-in interface. ​</p>
+<hr />
 
-   </tbody>
-</table>
+<h2 id="create-plans-with-cloud-admin">Create Plans with Cloud Admin</h2>
+
+<p>You use the <strong>Packages</strong> icon in Cloud Admin to create the plans you need. For reference, Cloud Admin provides a link that describes and compares all Weebly plans. Use this to decide which plans you’d like to implement for your customers.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Prices shown with the Weebly plan descriptions may not accurately reflect the prices for your account. Please use this only as a reference for plan descriptions, not prices.</div>
+
+<p><strong>To create a plan:</strong></p>
+<ol>
+  <li>In the <a href="weeblycloud.com/admin">Cloud Admin</a>, click <strong>PACKAGES</strong> and click <strong>Add Plan</strong>.</li>
+  <li>Enter a plan name. The name must be unique.</li>
+  <li>Select the corresponding Weebly plan. Your plan will inherit the functionality available in the Weebly plan.</li>
+  <li>Optionally enable access to the <a href="www.weebly.com/app-center">Weebly App Center</a>. If you don’t enable access, no links to the center will display in the Editor. You can still create and install your own <span style="color: red">custom apps</span> for this plan. Depending on how your account was configured, free sites may or may not be able to have access to the app center. Ask your account representative for more info.
+    <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Ask your account representative if your unsure whether or not your account has access to the App Center.</div>
+  </li>
+  <li>Optionally set a published page number limit (the site can have an unlimited amount of draft, unpublished pages).</li>
+  <li>Set the monthly and/or yearly pricing for the plan.</li>
+  <li>Optionally set the plan as the default. Only one plan can be the default.</li>
+</ol>
+<figure><img class="docimage" src="images/cl_plans.png" alt="" /></figure>
+<p><br /></p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> f you are editing a plan to add App Center access, any sites on that plan immediately gain access to the center once you save your changes. If you revoke access, then sites can’t access the App Center going forward, but will continue to be able to use any apps already installed.</div>
+
+<hr />
+
+<h2 id="create-plans-with-plug-ins">Create Plans with Plug-ins</h2>
+
+<p>If you are using plug-ins, then you can import any plans created in Weebly Cloud as shown above, directly into the plug-in. See the appropriate <span style="color:red">plug-in topics</span> for more info.
+<!-- TODO: add link --></p>
+<figure><img class="docimage" src="images/cl_plan_whmcs.png" alt="" /></figure>
 
 
 
     <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        <a href="tag_plans.html" class="btn btn-default navbar-btn cursorNorm" role="button">plans</a>
+        
+        
         
     </div>
 
