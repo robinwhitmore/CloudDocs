@@ -3,9 +3,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content=" ">
-<title> | Weebly Cloud for Designers Documentation</title>
+<meta name="description" content="​Following are common issues and their resolutions.">
+<meta name="keywords" content="troubleshootingconfiguration,  trouble, email, invitation, SPF, IP, domain">
+<title>Troubleshooting Weebly Cloud | Weebly Cloud for Designers Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -145,7 +145,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the  page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Troubleshooting Weebly Cloud page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -163,7 +163,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Troubleshooting Weebly Cloud">{title}</a></li>',
                     noResultsText: 'No results',
                             limit: 10,
                             fuzzy: true,
@@ -338,7 +338,7 @@
             
             
             
-            <li><a href="ds_gs_trouble.html">Troubleshooting Weebly Cloud</a></li>
+            <li class="active"><a href="ds_gs_trouble.html">Troubleshooting Weebly Cloud</a></li>
             
             
             
@@ -362,9 +362,9 @@
     <!-- Content Column -->
     <div class="col-md-9">
         <div>
-    <div class="pageType"> </div>
+    <div class="pageType">  reference </div>
     <div class="post-header">
-        <h1 class="post-title-main"></h1>
+        <h1 class="post-title-main">Troubleshooting Weebly Cloud</h1>
     </div>
 </div>
 
@@ -373,6 +373,8 @@
 
 <div class="post-content">
 
+   
+    <div class="summary">​Following are common issues and their resolutions.</div>
    
 
 
@@ -405,26 +407,45 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="printTitleArea">
-    <div class="printTitle"></div>
-    <div class="printSubtitle"></div>
-    <div class="lastGeneratedDate">Last generated: October 10, 2017</div>
-    <hr />
+  <h2 id="emails-sent-from-cloud-admin-or-a-users-site-cant-be-delivered">Emails Sent From Cloud Admin or a User’s Site Can’t be Delivered</h2>
 
-    <div class="printTitleImage">
-        <img src="http://localhost:4008//images/company_logo_big.png"/>
-    </div>
+<h3 id="issue">Issue:</h3>
 
-    <div class="copyrightBoilerplate">
-        <p>&copy; 2016 Your company. This is a boilerplate copyright statement... All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
-        </p>
+<p>Weebly Cloud sends out emails automatically, based on user action in the Cloud Admin and in a Weebly site. Sometimes, these emails cannot be delivered.</p>
 
-    </div>
+<h3 id="details">Details:</h3>
 
-</div>
+<p>For example, the Cloud Admin sends the Team Member User Invitation (when a new team member is created) and the User Invitation (when a user is created). Emails from the Cloud Admin are sent from <code class="highlighter-rouge">noreply@&lt;domain.com&gt;</code>, where <code class="highlighter-rouge">domain.com</code> is the URL that you entered when you set up your footer message.</p>
+
+<p>Weebly sites also send email when certain events happen, such as member registration or placing an order in an online store. These emails are sent from the email configured by the user.</p>
+
+<h3 id="fix">Fix:</h3>
+
+<p>In both cases, because Weebly sends these emails as your domain (for the admin) or as the user’s email, but they actually come from a Weebly IP address, they often fail SPF checks. To fix this, the Weebly IP needs to be added to the SPF record.</p>
+
+<p>Here’s the Weebly IP:
+    <code class="highlighter-rouge">ip4:74.115.48.0/22</code></p>
+
+<p>For your Cloud Admin, this record needs to be added to the site where Weebly Cloud is hosted.</p>
+
+<p>For user sites, the record needs to be added to the domain where their Weebly site is hosted.</p>
+
+<p>Each host will have a different way of adding the record. Users should contact their host for more info.</p>
 
 
     <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_troubleshooting.html" class="btn btn-default navbar-btn cursorNorm" role="button">troubleshooting</a>
+        
+        
+        
+        <a href="tag_configuration.html" class="btn btn-default navbar-btn cursorNorm" role="button">configuration</a>
+        
+        
         
     </div>
 
