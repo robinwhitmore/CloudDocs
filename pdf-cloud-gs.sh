@@ -5,7 +5,7 @@ kill -9 $(ps aux | grep '[j]ekyll' | awk '{print $2}')
 clear
 
 echo "Building PDF-friendly HTML site for Cloud Getting Started ...";
-bundle exec jekyll serve --detach --config _config_Cloud.yml,pdfconfigs/config_cloud_gs_pdf.yml;
+bundle exec jekyll serve --detach --config _config_Cloud.yml,pdfconfigs/cloud/config_cloud_gs_pdf.yml;
 echo "done";
 
 echo "Building the PDF ...";
